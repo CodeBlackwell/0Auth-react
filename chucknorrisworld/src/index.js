@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CelebrityJokes from './components/CelebrityJokes';
 import FoodJokes from './components/FoodJokes';
-import { Router, Route, browserHistory } from 'react-router';
+import {Router, Route, browserHistory} from 'react-router';
 
 const Root = () => {
     return (
         <div className="container">
             <Router history={browserHistory}>
                 <Route path="/" component={FoodJokes}/>
-                <Route path="/special" component={CelebrityJokes} />
+                <Route path="/special" component={CelebrityJokes}/>
             </Router>
         </div>
     )
 };
 
-ReactDOM.render(<Root/>, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));

@@ -28,7 +28,7 @@ class FoodJokes extends Component {
                 <Nav />
                 <h3 className="text-center">Chuck Norris Food Jokes</h3>
                 <hr/>
-                { joke.map((joke, index) => { return (
+                { jokes.map((joke, index) => { return (
                     <div className="col-sm-6" key={index}>
                         <div className="panel panel-primary">
                             <div className="panel-heading">
